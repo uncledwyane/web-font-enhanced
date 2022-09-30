@@ -1,11 +1,40 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>NASA Picture of the Day</title>
+    <title>Web Font Enhanced</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #wrap{
+            width: 150px;
+            padding: 5px;
+        }
+        button {
+            background-color: #336dab;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            font-size: 16px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:active{
+            box-shadow: 0 0 5px rgba(0,0,0,.3);
+        }
+    </style>
   </head>
   <body>
-    <div>
-        <h1>wangbo</h1>
+    <div id="wrap">
+        <h2>页面字体增强</h2>
+        <p>增强低分辨率显示器下浏览器字体的显示效果，减少发虚</p>
+        <p>网站列表：</p>
+        <ul class="page-list">
+            <li class="page">微博</li>
+            <li class="page">NGA</li>
+            <li class="page">Fanyouf</li>
+        </ul>
+        <button id="testBtn">Click Me</button>
     </div>
+    <script src="./js/popup.js"></script>
   </body>
 </html>

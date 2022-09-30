@@ -10,18 +10,15 @@
       "128": "icons/nasapod128x128.png"
     },
     "permissions": ["tabs"],
-    "typeAcquisition": {
-        "include": ["chrome"]
-    },
     "browser_action": {  
-    "default_icon": {  
-        "16": "icons/nasapod16x16.png",
-        "48": "icons/nasapod48x48.png"
+        "default_icon": {  
+            "16": "icons/nasapod16x16.png",
+            "48": "icons/nasapod48x48.png"
         },
         "default_title": "hello",
         "default_popup": "popup/popup.html"
     },
-    "author": "authorname<author@name.com>",
+    "author": "luckyWade<327656879@qq.com>",
     "background": {
         "scripts": ["scripts/default.js"],
         "persistent": false
@@ -29,13 +26,26 @@
     "devtools_page": "devtools.html",
     "content_scripts": [
         {
-          "js": ["scripts/text-shadow.js"],
-          "matches": ["*://fanyouf.gitee.io/*"]
+            "matches": [
+              "<all_urls>"
+            ],
+            "js": ["lib/jquery.min.js","content-scripts/content.js"]
+        },
+        {
+            "js": ["scripts/fanyouf.js"],
+            "matches": ["*://fanyouf.gitee.io/*"]
         },
         {
             "js": ["scripts/weibo.js"],
             "matches": ["*://weibo.com/*"]
+        },
+        {
+            "js": ["scripts/nga.js"],
+            "matches": ["*://bbs.nga.cn/*"]
         }
+    ],
+    "web_accessible_resources": [
+        "images/*.jpeg"
     ]
 }
   
