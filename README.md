@@ -5,4 +5,4 @@ chromium浏览器的拓展，优化文字显示效果，方便阅读
 
 下面是效果：
 
-![效果图](https://raw.githubusercontent.com/uncledwyane/imageBed/master/img/20220815174917.png)
+![](https://raw.githubusercontent.com/uncledwyane/imageBed/master/img/20220815174917.png)
